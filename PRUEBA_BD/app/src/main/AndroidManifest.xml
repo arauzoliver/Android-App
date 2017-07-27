@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.soporte.prueba_bd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Provider"
+            android:theme="@style/AppTheme"
+            android:label="Proveedores" />
+        <activity
+            android:name=".Electricity"
+            android:label="Proveedores de electricidad" />
+        <activity
+            android:name=".Mobiles"
+            android:label="Telefonía móvil prepago" />
+        <activity
+            android:name=".CableTv"
+            android:label="Cable TV" />
+        <activity android:name=".Bancos"
+            android:label="Servicios Bancarios"/>
+    </application>
+
+</manifest>
